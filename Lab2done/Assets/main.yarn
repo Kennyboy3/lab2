@@ -1,0 +1,115 @@
+﻿//https://docs.google.com/document/d/1_TW68x3dKWRbzhnnR4NlMcgyCsUMyhdd0WZA8-XY-hA/edit#heading=h.wnn5s6fzq0rl
+title: Start
+tags:
+position: -28,-646
+---
+Mom: Good morning sweety, are ready for your birthday
+    me: yeah, sure am!
+        Mom: Thats good to hear
+            -> When do I get my presnets?
+                <<jump presnets>>
+            -> whats for breakfest
+                <<jump breakfest>>
+===
+
+title: presnets
+position: 190,-504
+---
+Mom: not till later.
+    -> aww, but I want them now!
+     <<jump later>>
+    -> ok i'll wait
+     <<jump wait>>
+===
+
+title: later
+position: 167,-273
+---
+Mom: To bad, your Dad and I are going out for a bit to gather stuff for your birthday.
+    me: when will you be back
+        Mom: around 12
+         <<jump mid>>
+===
+
+
+title: breakfest
+position: -226,-442
+---
+Mom: your favourite!
+    -> pancakes?!
+     <<jump yeah>>
+    -> bacon?!
+     <<jump yeah>>
+===
+
+title: yeah
+position: -229,-264
+---
+Mom: you know it! its almost done so get ready.
+    me: ok I'll get ready to eat.
+        Mom: Your Dad and I are going out for a bit to gather stuff for your birthday after we eat.
+            me: ok when will you be back?
+                Mom: around 12
+                 <<jump mid>>
+===
+
+title: mid
+position: -30,-93
+---
+me: its 1 o'clock and they aren't back yet
+    -> go out and look for them
+     <<jump out>>
+    -> wait for them
+     <<jump in>>
+===
+
+title: out
+position: -207,86
+---
+Narrator: while looking for your parents you notice birthday items on the ground.
+    -> follow items
+     <<jump endfound>>
+    -> continue looking
+     <<jump continue>>
+===
+
+title: in
+position: 344,112
+---
+knock knock:
+    me:uhm, who could that be?
+        police officer: is this the slime residents?
+            me: yeah, why?
+                police officer: im so sorry but we found your parents dead
+                 <<jump endbad>>
+===
+title: endbad
+position: 344,308
+---
+Narrator: in sock and horror you don't know what to do and die from sadness
+    THE END:
+===
+title: continue
+position: 52,93
+---
+Narrator: you can't find them so you...
+    -> continue looking
+     <<jump continue>>
+    -> go home
+     <<jump home>>
+===
+title: home
+position: 56,294
+---
+Narrator: at home you dont know what to do
+    -> call police
+     <<jump in>>
+    -> wait
+     <<jump in>>
+===
+title: endfound
+position: -209,283
+---
+Narrator: you follow the trail and find someone standing over murdered parents so you run away but your raged filled and set out on a jouney to find who murdered your parents.
+    THE END:
+===
